@@ -10,6 +10,7 @@
 </head>
 <body>
 <header>
+    <!-- parte header top con logo e avatar -->
         <div class="navtop">
             <div class="logo">
                 <img src="img/google-logo.png" alt="logo Google">
@@ -19,6 +20,7 @@
                 <img src="img/avatar.png" alt="avatar">
             </div>
         </div>
+        <!-- parte navbar con varie scelte -->
         <div class="navbar">
             <ul class="list-navbar">
                 <li>
@@ -40,24 +42,26 @@
         </div>
     </header>
     <hr>
+    <!-- parte contenitore centrale con php -->
     <div class="container">
         <?php
+        //array con questions and answers
             $faq = [
                 [
                     'question' => 'How are you implementing the recent Court of Justice of the European Union (CJEU) decision on the right to be forgotten?',
                     'answer' => "The recent ruling by the Court of Justice of the European Union has profound consequences for search engines in Europe. The court found that certain users have the right to ask search engines like Google to remove results for queries that include the person's name. To qualify, the results shown would need to be inadequate, irrelevant, no longer relevant, or excessive.
-                        Since this ruling was published on 13 May 2014, we've been working round the clock to comply. This is a complicated process because we need to assess each individual request and balance the rights of the individual to control his or her personal data with public's right to know and distribute information.
-                        If you have a removal request, please fill out this webform. You'll receive an automatic reply confirming that we have received your request. We will then assess your case—please note this may take some time because we have already received many such requests. In evaluating your request, we will look at whether the results include outdated information about your private life. We'll also look at whether there's a public interest in the information remaining in our search results—for example, if it relates to financial scams, professional malpractice, criminal convictions or your public conduct as a government official (elected or unelected). These are difficult judgements and as a private organization, we may not be in a good position to decide on your case. If you disagree with our decision you can contact your local DPA.
-                        We look forward to working closely with data protection authorities and others over the coming months as we refine our approach. The CJEU's ruling constitutes a significant change for search engines. While we are concerned about its impact, we also believe it's important to respect the Court's judgment and are working hard to devise a process that complies with the law.
-                        When you search for a name, you may see a notice that says that results may have been modified in accordance with data protection law in Europe. We’re showing this notice in Europe when a user searches for most names, not just pages that have been affected by a removal."     
+                                Since this ruling was published on 13 May 2014, we've been working round the clock to comply. This is a complicated process because we need to assess each individual request and balance the rights of the individual to control his or her personal data with public's right to know and distribute information.
+                                If you have a removal request, please fill out this webform. You'll receive an automatic reply confirming that we have received your request. We will then assess your case—please note this may take some time because we have already received many such requests. In evaluating your request, we will look at whether the results include outdated information about your private life. We'll also look at whether there's a public interest in the information remaining in our search results—for example, if it relates to financial scams, professional malpractice, criminal convictions or your public conduct as a government official (elected or unelected). These are difficult judgements and as a private organization, we may not be in a good position to decide on your case. If you disagree with our decision you can contact your local DPA.
+                                We look forward to working closely with data protection authorities and others over the coming months as we refine our approach. The CJEU's ruling constitutes a significant change for search engines. While we are concerned about its impact, we also believe it's important to respect the Court's judgment and are working hard to devise a process that complies with the law.
+                                When you search for a name, you may see a notice that says that results may have been modified in accordance with data protection law in Europe. We’re showing this notice in Europe when a user searches for most names, not just pages that have been affected by a removal."     
                 ],
 
                 [   
                     'question' => 'How does Google protect my privacy and keep my information secure?',
                     'answer' => "We know security and privacy are important to you – and they are important to us, too. We make it a priority to provide strong security and give you confidence that your information is safe and accessible when you need it.
-                    We’re constantly working to ensure strong security, protect your privacy, and make Google even more effective and efficient for you. We spend hundreds of millions of dollars every year on security, and employ world-renowned experts in data security to keep your information safe. We also built easy-to-use privacy and security tools like Google Dashboard, 2-step verification and Ads Settings. So when it comes to the information you share with Google, you’re in control.
-                    You can learn more about safety and security online, including how to protect yourself and your family online, at the Google Safety Center.
-                    Learn more about how we keep your personal information private and safe — and put you in control."    
+                                We’re constantly working to ensure strong security, protect your privacy, and make Google even more effective and efficient for you. We spend hundreds of millions of dollars every year on security, and employ world-renowned experts in data security to keep your information safe. We also built easy-to-use privacy and security tools like Google Dashboard, 2-step verification and Ads Settings. So when it comes to the information you share with Google, you’re in control.
+                                You can learn more about safety and security online, including how to protect yourself and your family online, at the Google Safety Center.
+                                Learn more about how we keep your personal information private and safe — and put you in control."    
                 ],
                 [
                         'question' => 'How can I remove information about myself from Google\'s search results?',
@@ -65,18 +69,18 @@
                     
                ],
                 [
-                
                     'question' => 'Are my search queries sent to websites when I click on Google Search results?',
                     'answer' => "In some cases, yes. When you click on a search result in Google Search, your web browser also may send the Internet address, or URL, of the search results page to the destination webpage as the Referrer URL. The URL of the search results page may sometimes contain the search query you entered. If you are using SSL Search (Google’s encrypted search functionality), under most circumstances, your search terms will not be sent as part of the URL in the Referrer URL. There are some exceptions to this behavior, such as if you are using some less popular browsers. More information on SSL Search can be found here. Search queries or information contained in the Referrer URL may be available via Google Analytics or an application programming interface (API). In addition, advertisers may receive information relating to the exact keywords that triggered an ad click." 
                 ]
             ];
-             //for each sulla chiave interna di post per avere i valori interni
+             //for each sulla chiave interna di faq per avere i valori interni
                     foreach ($faq as $words) {?>
                         <h2><?php echo $words['question']; ?></h2>
                         <p><?php echo $words['answer']; ?></p>
                     <?php } ?>
     </div>
     <footer class="footer">
+        <!-- parte footer sinistra con lista -->
         <div class="footer__menu">
             <ul>
                 <li><a href="#">Google</a></li>
@@ -85,6 +89,7 @@
                 <li><a href="#">Terms</a></li>
             </ul>
         </div>
+        <!-- parte destra footer con select -->
         <div class="footer__language-select">
             <select name="language_choice" id="languages">
                 <option value="">Italiano</option>
