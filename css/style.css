@@ -3,11 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body{
     font-family: 'Roboto', sans-serif;
 }
-
 a{
     text-decoration: none;
     color: #5f6368;
@@ -68,4 +66,7 @@ header .list-navbar .selected > a{
 .avatar >*{
     width: 40px;
     margin-right: 10px;
+}
+.container{
+    display: block;
 }
