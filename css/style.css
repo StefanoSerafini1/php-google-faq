@@ -10,6 +10,16 @@ a{
     text-decoration: none;
     color: #5f6368;
 }
+h2{
+    color:darkslategray;
+    margin-bottom: 30px;
+}
+p{
+    color: rgb(80, 77, 77);
+    margin-bottom: 50px;
+    line-height: 25px;
+    font-size: 15px;
+}
 header{
     background: #fff;
     position: fixed;
@@ -31,13 +41,11 @@ header .logo img{
     width: 100px;
     margin-right: 10px;
 }
-
 header .logo span{
     font-size: 22px;
     font-weight: 500;
     color: #5f6368;
 }
-
 header .navbar{
     display: flex;
     justify-content: space-between;
@@ -68,5 +76,7 @@ header .list-navbar .selected > a{
     margin-right: 10px;
 }
 .container{
-    display: block;
+    margin: auto;
+    margin-top: 170px;
+    width: 60%;
 }
