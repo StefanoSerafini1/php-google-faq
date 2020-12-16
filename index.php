@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
     <title>FAQ google rifacimento</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
                 <span>Privacy & Terms</span>
             </div>
             <div class="avatar">
-                <i class="fas fa-folder"></i>
                 <img src="img/avatar.png" alt="avatar">
             </div>
         </div>
@@ -76,5 +76,22 @@
                         <p><?php echo $words['answer']; ?></p>
                     <?php } ?>
     </div>
+    <footer class="footer">
+        <div class="footer__menu">
+            <ul>
+                <li><a href="#">Google</a></li>
+                <li><a href="#">Abou Google</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+            </ul>
+        </div>
+        <div class="footer__language-select">
+            <select name="language_choice" id="languages">
+                <option value="">Italiano</option>
+                <option value="" selected>English</option>
+                <option value="">Espanol</option>
+            </select>
+        </div>
+    </footer>
 </body>
 </html>
